@@ -1,11 +1,11 @@
 /* CUSTOM PROPS */
 :root[data-theme="light"] {
-  --color-light-blue: #E0E8FF;
-  --color-blueish-white: #F7F9FF;
-  --color-dark-blue: #1F2E55;
-  --color-blue-grey: #717FA6;
-  --color-purple-blue: #382AE1;
-  --color-purple-light: #766CF1;
+  --color-light-blue: #e0e8ff;
+  --color-blueish-white: #f7f9ff;
+  --color-dark-blue: #1f2e55;
+  --color-blue-grey: #717fa6;
+  --color-purple-blue: #382ae1;
+  --color-purple-light: #766cf1;
   --color-white: #fff;
 
 
@@ -19,7 +19,8 @@
   --color-primary: var(--color-purple-blue);
   --color-primary-hover: var(--color-purple-light);
 
-  --box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  --card-box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  --button-box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
 }
 
 
