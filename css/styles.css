@@ -110,10 +110,140 @@ select:-webkit-autofill:focus {
 }
 
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 11px;
+  background-color: transparent;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: var(--color-purple-blue);
+  color: var(--color-white);
+  box-shadow: var(--button-box-shadow);
+}
+
+.button--primary:hover {
+  background-color: var(--color-purple-light);
+  color: var(--color-white);
+}
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
+
+
+/* ORDER-SUMMARY-CARD */
+.order-summary-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-color: var(--color-card-bg);
+}
+
+.order-summary-card__poster {
+  width: 100%;
+}
+
+.order-summary-card__body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  background-color: var(--color-card-bg);
+}
+
+.order-summary-card__heading {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 16px;
+  color: var(--color-accent-text);
+  font-size: 1.375rem;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+.order-summary-card__text {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.order-summary-card__plan-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-bottom: 32px;
+  background-color: var(--color-secondary-bg);
+}
+
+.order-summary-card__music-icon {
+  flex-shrink: 0;
+}
+
+.order-summary-card__name-price {
+  flex-grow: 1;
+}
+
+.order-summary-card__name {
+  margin-bottom: 3px;
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: normal;
+  color: var(--color-accent-text);
+}
+
+.order-summary-card__price {
+  font-size: 0.875rem;
+  line-height: normal;
+}
+
+.link-button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  color: var(--color-purple-light);
+}
+
+.order-summary-card__actions {
+  display: grid;
+  justify-items: center;
+  margin-top: auto;
+}
+
+.order-summary-card__actions-cta {
+  margin-bottom: 24px;
+}
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -123,4 +253,92 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+}
+
+/* 320px */
+@media only screen and (min-width: 20em) {
+  .order-summary-card__plan-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 11px;
+  }
+}
+
+/* 375px */
+@media only screen and (min-width: 23.4375em) {
+  body {
+    padding: 24px;
+    background-image: url("../img/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 639px 194px;
+  }
+
+  .order-summary-card {
+    width: 100%;
+    max-width: 28.125rem;;
+    min-height: auto;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--card-box-shadow);
+  }
+
+  .order-summary-card__poster {
+    height: 160px;
+    object-fit: cover;
+  }
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5em) {
+  body {
+    background-image: url("../img/pattern-background-desktop.svg");
+    background-size: contain;
+  }
+}
+
+/* 768px */
+@media only screen and (min-width: 48em) {
+  body {
+    font-size: 1rem;
+    line-height: 162.5%;
+  }
+
+  .order-summary-card__poster {
+    height: 220px;
+  }
+
+  .order-summary-card__body {
+    padding: 45px 48px 48px;
+  }
+
+  .order-summary-card__heading {
+    padding: 0;
+    margin-bottom: 17px;
+    font-size: 1.75rem;
+  }
+
+  .order-summary-card__text {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .order-summary-card__plan-wrapper {
+    padding: 25px 24px;
+    margin-bottom: 32px;
+  }
+
+  .order-summary-card__name {
+    margin-bottom: 6px;
+    font-size: 1rem;
+  }
+
+  .order-summary-card__actions-cta {
+    margin-bottom: 32px;
+  }
+
+  .order-summary-card__actions a {
+    font-size: 0.9375rem;
+  }
 }
