@@ -1,10 +1,35 @@
+/* CUSTOM PROPS */
+:root[data-theme="light"] {
+  --color-light-blue: #E0E8FF;
+  --color-blueish-white: #F7F9FF;
+  --color-dark-blue: #1F2E55;
+  --color-blue-grey: #717FA6;
+  --color-purple-blue: #382AE1;
+  --color-purple-light: #766CF1;
+  --color-white: #fff;
+
+
+  --color-primary-bg: var(--color-light-blue);
+  --color-secondary-bg: var(--color-blueish-white);
+  --color-card-bg: var(--color-white);
+
+  --color-accent-text: var(--color-dark-blue);
+  --color-body-text: var(--color-blue-grey);
+
+  --color-primary: var(--color-purple-blue);
+  --color-primary-hover: var(--color-purple-light);
+
+  --box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+
+
 /* GLOBAL */
 body {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Red Hat Display", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
